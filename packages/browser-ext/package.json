@@ -85,7 +85,7 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "@vitejs/plugin-react": "^5.1.1",
     "jsdom": "^29.0.1",
-    "postcss": "8.5.14",
+    "postcss": "8.5.18",
     "postcss-modules": "^6.0.1",
     "tailwindcss-cli": "^0.1.2",
     "vite": "^7.3.2",
