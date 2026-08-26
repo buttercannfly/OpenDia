@@ -87,9 +87,14 @@ export function useChatConfig(
     setSettings((prev: AppSettings) => ({
       ...prev,
       ...(stored as Partial<AppSettings>),
-      customModels: (stored as AppSettings).customModels ?? [],
-      providerType: (stored as AppSettings).providerType ?? "openai",
-      providerEnabled: (stored as AppSettings).providerEnabled ?? false,
+      customModels:
+        (stored as AppSettings).customModels ?? prev.customModels ?? [],
+      providerType:
+        (stored as AppSettings).providerType ?? prev.providerType ?? "openai",
+      providerEnabled:
+        (stored as AppSettings).providerEnabled ??
+        prev.providerEnabled ??
+        false,
     }));
   }, []);
 
